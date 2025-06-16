@@ -4,7 +4,7 @@ import nav from './components/Navbar.js';
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to the Cyiprhhh Web Application</h1>
+      <h1>Welcome to the Cyiprhhhss Web Application</h1>
       <nav />
     </div>
   );

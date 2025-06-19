@@ -1,43 +1,23 @@
-import React from 'react';
+import './Navbar.css';
+import { Component } from 'react';
 
-const Navbar = () => {
-    return (
-        <nav style={styles.nav}>
-            <div style={styles.logo}>MyApp</div>
-            <ul style={styles.navLinks}>
-                <li><a href="/" style={styles.link}>Home</a></li>
-                <li><a href="/about" style={styles.link}>About</a></li>
-                <li><a href="/contact" style={styles.link}>Contact</a></li>
-            </ul>
-        </nav>
-    );
-};
-
-const styles = {
-    nav: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '1rem 2rem',
-        background: '#222',
-        color: '#fff',
-    },
-    logo: {
-        fontWeight: 'bold',
-        fontSize: '1.5rem',
-    },
-    navLinks: {
-        listStyle: 'none',
-        display: 'flex',
-        gap: '1.5rem',
-        margin: 0,
-        padding: 0,
-    },
-    link: {
-        color: '#fff',
-        textDecoration: 'none',
-        fontSize: '1rem',
-    },
+class Navbar extends Component {
+    render() {
+        return(
+            <nav className= 'nav'>
+                
+                <img src="/image/logo.png" alt="Logo" className="logo" />
+                <ul className='navLinks'>
+                    <li><a href="/" className= 'link'>首頁</a></li>
+                    <li><a href="/about" className= 'link'>關於我們</a></li>
+                    <li><a href="/contact" className= 'link'>商標申請</a></li>
+                    <li><a href="/PO" className= 'link'>各國專利局</a></li>
+                    <li><a href="/example" className= 'link'>客戶案例</a></li>
+                    <li><a href="/contact" className= 'link'>留言中心</a></li>
+                </ul>
+            </nav>
+        );
+    }
 };
 
 export default Navbar;

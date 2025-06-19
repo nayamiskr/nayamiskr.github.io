@@ -1,11 +1,11 @@
 import './style.css';
-import nav from './components/Navbar.js';
+import Nav from './components/Navbar.js';
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <h1>Welcome to the Cyiprs Web Application</h1>
-      <nav />
     </div>
   );
 }

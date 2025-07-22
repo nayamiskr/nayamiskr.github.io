@@ -1,11 +1,15 @@
 import './style.css';
-import Nav from './components/Navbar.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Homepage from './page/homepage.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <h1>Welcome to the Cyiprs Web Application</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<Homepage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

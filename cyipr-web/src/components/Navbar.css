@@ -13,13 +13,13 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-
+    z-index: 1000;
 }
 
 .logo {
     border-radius: 30px;
     font-weight: bold;
-    width: 25%;
+    width: 300px;
     height: auto;
 }
 
@@ -27,6 +27,8 @@
     display: flex;
     list-style: none;
     gap: 9px;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -82,10 +84,6 @@
 
   .navLinks.open {
     display: flex;
-  }
-
-  .logo {
-    width: 300px;
   }
 
   .menu {

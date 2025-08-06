@@ -1,4 +1,115 @@
 .content {
-    margin-top: 200px;
-
+    margin-top: 180px;
+    padding: 0px 75px;
 }
+
+.hero {
+    background-color: #00000015;
+    border-radius: 50px;
+    position: relative;
+    color: white;
+    display: flex;
+    box-shadow: 10px 10px rgba(0, 0, 0, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    padding: 30px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.hero p {
+    font-size: 48px;
+    font-weight: 200;
+    margin: 10px 0;
+    color: #010fa8;
+    text-indent: 2em;
+}
+
+.hero .text-right {
+    text-indent: 4em;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact span {
+    padding: 0px 20px
+}
+
+.contact a {
+    display: flex;
+    position: relative;
+    width: 200px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid #00000050;
+    border-radius: 10px;
+    color: black;
+    overflow: hidden;
+    gap: 5px;
+    z-index: 1;
+}
+
+.contact span :hover {
+    transform: rotateX(360deg);
+    transition: 0.7s;
+}
+
+.contact a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+
+.contact a:hover {
+    transform: rotateX(360deg);
+    color: #fff;
+}
+
+.contact a:hover::before {
+    top: 0;
+}
+
+.facebook::before {
+    background: #3b5999;
+}
+
+.map::before {
+    background: #ff0000;
+}
+
+.phone::before {
+    background: rgb(0, 195, 0);
+}
+
+.email::before {
+    background: #00d9ff;
+}
+

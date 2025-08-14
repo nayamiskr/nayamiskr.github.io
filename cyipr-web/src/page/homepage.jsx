@@ -2,6 +2,7 @@ import './homepage.css';
 import Navbar from "../components/Navbar";
 import { FaFacebookF, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Showcase from '../components/showcase';
 
 function Homepage() {
     return (
@@ -18,7 +19,7 @@ function Homepage() {
                 </div>
 
                 <div className="case-share">
-                    
+                    <Showcase />
                 </div>
 
                 <h3>歡迎聯絡我們一同守護您的招牌</h3>

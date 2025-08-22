@@ -18,6 +18,17 @@ function Homepage() {
                     </div>
                 </div>
 
+                <div className="service">
+                    <div className="service-bg">
+                        <span className="service-prefix">我們的服務項目：</span>
+                        <div className="dropping-texts">
+                            <div>商標申請</div>
+                            <div>著作權</div>
+                            <div>商品條碼</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="case-share">
                     <Showcase />
                 </div>
